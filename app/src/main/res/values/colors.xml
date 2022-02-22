@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#7C7C7C</color>
+    <color name="colorPrimaryDark">#7C7C7C</color>
+    <color name="colorAccent">#7C7C7C</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <color name="color_green">#14808d</color>
+    <color name="color_brown">#343838</color>
+    <color name="color_orange">#f38a32</color>
+    <color name="color_blue">#1479b7</color>
+    <color name="divider_grey">#B6B6B6</color>
+
+    <array name="rect_color">
+        <item>@color/color_blue</item>
+        <item>@color/color_brown</item>
+        <item>@color/color_green</item>
+        <item>@color/divider_grey</item>
+        <item>@color/color_orange</item>
+    </array>
+
+    <color name="edt_text_color">#353B48</color>
+    <color name="edt_hint_color">#8B8B8B</color>
+    <color name="btn_red_color">#CE0000</color>
+    <color name='grey'>#868686</color>
+    <color name='dark_grey'>#6C6C6C</color>
+    <color name="header_grey">#4C4C4C</color>
+    <color name="page_bg">#F8F8F8</color>
+
+    <color name="tab_unselected">#7C7C7C</color>
+    <color name="tab_selected">#DA0101</color>
+
+    <color name="menu_text_color">#4C4C4C</color>
+
+
+    <color name="item_title">#DC2424</color>
+    <color name="item_date">#6B7186</color>
+
+    <color name="total_events">#757575</color>
+
+    <color name="total_days">#20B9E8</color>
+
+    <color name="btn_pink">#DC68FF</color>
+    <color name="btn_green">#32C93A</color>
+    <color name="btn_orange">#FFB831</color>
+
+    <color name="scan_btn_blue">#009DFF</color>
+    <color name="entry_btn_grey">#797979</color>
+
+    <color name="text_green">#25C72D</color>
+    <color name="text_dark_grey">#959595</color>
+
+    <color name="bg_color">#EDEDED</color>
+
+</resources>

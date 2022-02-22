@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/rlIntroTop"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rlBottom"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_intro_page"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/bg_intro_page"
+            android:paddingTop="@dimen/dim_160"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="34sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/dim_24"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:text="@string/intro_page_header" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_22"
+            android:layout_marginTop="@dimen/dim_10"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/red"
+            android:text="@string/hello_scanker" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:layout_marginTop="@dimen/dim_12"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/dark_grey"
+            android:text="@string/intro_page_detail" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dim_10"
+            android:layout_marginEnd="@dimen/dim_10"
+            android:layout_marginTop="@dimen/dim_10"
+            android:layout_marginBottom="@dimen/dim_4"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/dark_grey"
+            android:text="@string/intro_bottom_label" />
+
+
+        <LinearLayout
+            android:id="@+id/llLetsGo"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/dim_16"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_14"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/tab_selected"
+            android:text="@string/let_s_go" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dim_20"
+            android:rotation="180"
+            android:tint="@color/tab_selected"
+            android:layout_marginStart="@dimen/dim_2"
+            android:src="@drawable/ic_arrow_back_gray_24dp"
+            android:layout_height="@dimen/dim_20"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

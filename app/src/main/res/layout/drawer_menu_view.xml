@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    app:headerLayout="@layout/nav_header">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dim_28"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/llHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dim_24"
+                android:layout_height="@dimen/dim_24"
+                android:scaleType="center"
+                android:src="@drawable/ic_help" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_12"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/menu_help"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/text_20" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llFaqs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_20"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dim_24"
+                android:layout_height="@dimen/dim_24"
+                android:scaleType="center"
+                android:src="@drawable/ic_faqs" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_12"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/menu_faq_s"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/text_20" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dim_28"
+        android:layout_marginBottom="@dimen/dim_16"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/llLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dim_24"
+                android:layout_height="@dimen/dim_24"
+                android:id="@+id/ivLogOut"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_logout" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/logout"
+                android:layout_marginStart="@dimen/dim_12"
+                android:layout_toRightOf="@+id/ivLogOut"
+                android:layout_centerVertical="true"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/text_20" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginTop="@dimen/dim_8"
+            android:fontFamily="@font/montserrat_thin"
+            android:text="@string/scankappltd_2021"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/ts13sp" />
+
+    </LinearLayout>
+
+</com.google.android.material.navigation.NavigationView>

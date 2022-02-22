@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "604998695086",
+    "project_id": "scank-organiser",
+    "storage_bucket": "scank-organiser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604998695086:android:b06d40780b79df7d2a953f",
+        "android_client_info": {
+          "package_name": "com.scank.organizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604998695086-mmihfiqgmllf2tuskcsiqcf4jna20m2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKPFEdY4RObJu7aAZaLP6oDc9CnWAd1xA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604998695086-mmihfiqgmllf2tuskcsiqcf4jna20m2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_19">19sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_26">26sp</dimen>
+    <dimen name="text_28">28sp</dimen>
+
+
+    <dimen name="ts9sp">9sp</dimen>
+    <dimen name="ts10sp">10sp</dimen>
+    <dimen name="ts11sp">11sp</dimen>
+    <dimen name="ts12sp">12sp</dimen>
+    <dimen name="ts13sp">13sp</dimen>
+    <dimen name="ts14sp">14sp</dimen>
+    <dimen name="ts15sp">15sp</dimen>
+    <dimen name="ts16sp">16sp</dimen>
+    <dimen name="ts18sp">18sp</dimen>
+    <dimen name="ts22sp">22sp</dimen>
+    <dimen name="ts17sp">17sp</dimen>
+    <dimen name="ts20sp">20dp</dimen>
+    <dimen name="ts24sp">24sp</dimen>
+
+
+    <dimen name="dim_1">1dp</dimen>
+    <dimen name="dim_2">2dp</dimen>
+    <dimen name="dim_4">4dp</dimen>
+    <dimen name="dim_8">8dp</dimen>
+    <dimen name="dim_10">10dp</dimen>
+    <dimen name="dim_12">12dp</dimen>
+    <dimen name="dim_14">14dp</dimen>
+    <dimen name="dim_16">16dp</dimen>
+    <dimen name="dim_18">18dp</dimen>
+    <dimen name="dim_20">20dp</dimen>
+    <dimen name="dim_24">24dp</dimen>
+    <dimen name="dim_32">32dp</dimen>
+    <dimen name="dim_48">48dp</dimen>
+    <dimen name="dim_54">54dp</dimen>
+    <dimen name="dim_28">28dp</dimen>
+    <dimen name="text_34">34dp</dimen>
+    <dimen name="dim_26">26dp</dimen>
+    <dimen name="dim_40">40dp</dimen>
+    <dimen name="dim_6">6dp</dimen>
+    <dimen name="dim_80">80dp</dimen>
+    <dimen name="dim_60">60dp</dimen>
+    <dimen name="bt_progress_bar_diameter">28dp</dimen>
+    <dimen name="dim_100">100dp</dimen>
+    <dimen name="dim_120">120dp</dimen>
+    <dimen name="dim_160">160dp</dimen>
+    <dimen name="dim_36">36dp</dimen>
+    <dimen name="dim_44">44dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_8">8sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_21">21sp</dimen>
+    <dimen name="dim_9">9dp</dimen>
+    <dimen name="dim_62">62dp</dimen>
+    <dimen name="dim_34">34dp</dimen>
+    <dimen name="dim_13">13dp</dimen>
+    <dimen name="dim_17">17dp</dimen>
+    <dimen name="dim_66">66dp</dimen>
+    <dimen name="dim_33">33dp</dimen>
+    <dimen name="text_9">9sp</dimen>
+    <dimen name="dim_64">64dp</dimen>
+
+
+</resources>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dim_10"
+    android:paddingTop="@dimen/dim_16"
+    android:layout_marginEnd="@dimen/dim_10">
+
+
+    <RelativeLayout
+        android:id="@+id/rlMainEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_right_side_corner"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llImageBg"
+            android:layout_width="84dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:gravity="end">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivEventImage"
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/llImageBg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_12">
+
+                <LinearLayout
+                    android:id="@+id/rlLabelView"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:lines="2"
+                        android:gravity="bottom"
+                        android:textColor="@color/item_title"
+                        android:textSize="@dimen/text_15"
+                        tools:text="Summer Party - 2021" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_6"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/item_date"
+                        android:textSize="@dimen/text_11"
+                        tools:text="Wed 31 Apr 2021 9PM" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tvLabelDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Days to go:"
+                            android:textColor="#6B7186"
+                            android:textSize="@dimen/text_10"
+                            tools:text="Days to go:" />
+
+
+                        <TextView
+                            android:id="@+id/tvRemainingDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dim_4"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/total_days"
+                            android:textSize="@dimen/text_11"
+                            tools:text="120" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/dim_8">
+
+                    <LinearLayout
+                        android:id="@+id/llBracket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/dim_8"
+                        android:paddingBottom="@dimen/dim_4"
+                        android:paddingTop="@dimen/dim_4">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivBracket"
+                            android:layout_width="@dimen/dim_20"
+                            android:layout_height="@dimen/dim_20"
+                            android:rotation="180"
+                            android:src="@drawable/ic_down_arrow_gray"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/llTicketSold"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/llBracket"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_4">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignBottom="@+id/tvSoldPer"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="@string/tickets_sold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_9"
+                            tools:text="Tickets Sold" />
+
+                        <TextView
+                            android:id="@+id/tvSoldPer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dim_4"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/black"
+                            android:textSize="10.5sp"
+                            tools:text="50%" />
+
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatSeekBar
+                        android:id="@+id/seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="3.5dp"
+                        android:layout_below="@+id/llTicketSold"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progress"
+                        android:thumb="@null" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llEventBarView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekbar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dim_12">
+
+
+                        <TextView
+                            android:id="@+id/tvCompletedEvents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/btn_pink"
+                            android:textSize="@dimen/text_16"
+                            tools:text="500" />
+
+
+                        <TextView
+                            android:id="@+id/tvTotalEvents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dim_4"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/total_events"
+                            android:textSize="@dimen/text_16"
+                            tools:text="/ 1000" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llBottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_16"
+        android:layout_marginEnd="@dimen/dim_16"
+        android:padding="@dimen/dim_16"
+        android:background="@drawable/bg_bottom_corner">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReports"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_32"
+            android:layout_marginEnd="@dimen/dim_4"
+            android:layout_weight="1"
+            android:background="@drawable/btn_reports"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/reports"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuestList"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_32"
+            android:layout_marginStart="@dimen/dim_4"
+            android:layout_marginEnd="@dimen/dim_4"
+            android:layout_weight="1"
+            android:background="@drawable/btn_guest_list"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/guest_list"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnManage"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_32"
+            android:layout_marginStart="@dimen/dim_4"
+            android:layout_weight="1"
+            android:background="@drawable/btn_manage"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/manage"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12" />
+
+
+    </LinearLayout>
+</LinearLayout>

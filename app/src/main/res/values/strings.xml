@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Organiser</string>
+    <string name="db_name">Organiser.realm</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_guestlist">Guest List</string>
+    <string name="title_manage">Manage</string>
+    <string name="title_reports">Reports</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="scan_barcode_with_request_code">Scan Barcode with customized request code</string>
+    <string name="any_orientation">1D Any Orientation</string>
+    <string name="scan_from_fragment">Scan from fragment</string>
+    <string name="front_camera">Front Camera</string>
+    <string name="custom_activity">Continuous Scan</string>
+    <string name="toolbar_activity">Activity with Toolbar</string>
+    <string name="custom_scanner">Custom Scanner Activity</string>
+    <string name="scanner_with_margin">Scanner with Margin</string>
+    <string name="scanner_with_timeout">Finish Scan in 8 Seconds</string>
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
+    <string name="title_activity_tabbed_scanning">Tabbed Scanning</string>
+    <string name="tabs">Tabs</string>
+    <string name="about">About</string>
+
+    <string name="splash_app_text">O R G A N I S E R</string>
+
+
+    <string name="app_copyright_tag">©ScankAppLtd 2021</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="don_t_have_an_account">Don’t have an account? </string>
+    <string name="sign_up">Sign up</string>
+    <string name="or_login_with">Or login with</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="open_settings">Open Settings</string>
+    <string name="view">View</string>
+    <string name="enter_your_subject">Enter your subject</string>
+
+    <string name="something_went_wrong">Something went wrong. Please try again.</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+
+    <string name="internet_error_when_api">The Internet seems to be unavailable. Please check your connection and try again</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="internet_not_available">Internet not available</string>
+    <string name="internet_available">Internet Available</string>
+
+    <string name="channel_name">scank_channel</string>
+    <string name="channel_id">scank</string>
+
+    <string name="not_able_to_get_location">Not able to get location</string>
+    <string name="are_you_sure_you_want_to_exit_from_app">Are you sure you want to exit from app?</string>
+    <string name="reset_password">RESET PASSWORD</string>
+
+
+    <string name="hello_scanker">Hello Scanker!</string>
+    <string name="intro_page_header">Track Sales\nCheck in Guests\nManage Events</string>
+
+    <string name="intro_page_detail">Let’s get the show on the road, manage\nall aspects of your event with\nScank Organiser.</string>
+    <string name="intro_bottom_label">The Ultimate Experience.</string>
+    <string name="scan_ticket">Scan Ticket</string>
+    <string name="manual_entry">Manual Entry</string>
+    <string name="let_s_go">Let’s Go</string>
+    <string name="enter_email">Email address</string>
+
+    <!--Validate-->
+    <string name="check_your_email">Please check your email address.</string>
+    <string name="scankappltd_2021">Scankappltd 2021 All rights reserved</string>
+    <string name="logout">Logout</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_faq_s">Faq’s</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="manage">Manage</string>
+    <string name="guest_list">Guest List</string>
+    <string name="reports">Reports</string>
+    <string name="wrong_email_format">Enter valid email address</string>
+    <string name="password_not_empty">Please enter password</string>
+    <string name="about_us">About Us</string>
+    <string name="your_events">Your Events</string>
+    <string name="tickets_sold">Tickets Sold</string>
+    <string name="checked_in">Checked In</string>
+    <string name="exit_manual">Exit Manual</string>
+    <string name="exit_scan">Exit Scan</string>
+
+    <!--update app id from pushwoosh-->
+    <string name="app_id">BAEE1-02AC5</string>
+    <string name="fcm_sender_id">604998695086</string>
+
+
+</resources>

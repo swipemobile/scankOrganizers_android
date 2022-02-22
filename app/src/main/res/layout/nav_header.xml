@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlLogo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="94dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="@dimen/dim_64"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="@dimen/dim_80"
+        android:src="@drawable/splash_icon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ivLogo"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginTop="7.37sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/splash_app_text"
+        android:textColor="@color/grey"
+        android:textSize="11sp" />
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_62"
+            android:background="#F8F8F8"
+            android:focusable="false"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Name, Order Number, Ticket Type"
+            android:searchIcon="@drawable/ic_search_icon"
+            android:theme="@style/ThemeOverlay.SearchView"
+            app:goIcon="@null" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_24"
+            android:background="#676767"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dim_12"
+            android:paddingEnd="@dimen/dim_12">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icUser"
+                android:layout_width="@dimen/dim_16"
+                android:layout_height="@dimen/dim_16"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dim_12"
+                android:src="@drawable/ic_small_user"
+                android:tint="@color/text_green" />
+
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_9"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dim_10"
+                android:layout_toLeftOf="@id/llEventBarView"
+                android:layout_toRightOf="@+id/icUser"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress2"
+                android:thumb="@null" />
+
+
+            <LinearLayout
+                android:id="@+id/llEventBarView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dim_12">
+
+
+                <TextView
+                    android:id="@+id/tvSalesTicket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_10"
+                    tools:text="500" />
+
+
+                <TextView
+                    android:id="@+id/tvTotalTickets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_4"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_10"
+                    tools:text="/1000" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/llTop"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:listitem="@layout/item_guest_list" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim_8"
+        android:weightSum="2"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/llScanTicket"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_44"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_button"
+            android:backgroundTint="@color/scan_btn_blue"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:src="@drawable/ic_scan"
+                    android:tint="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/tvTotalEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/scan_ticket"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llManualEntry"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_44"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_button"
+            android:backgroundTint="@color/entry_btn_grey"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dim_14"
+                    android:layout_height="@dimen/dim_14"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:src="@drawable/ic_grid"
+                    android:tint="@color/white" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/manual_entry"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

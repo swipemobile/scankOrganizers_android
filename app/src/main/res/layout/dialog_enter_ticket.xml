@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtTicketNum"
+        android:layout_width="match_parent"
+        android:background="@drawable/border_edittext"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dim_12"
+        android:layout_margin="@dimen/dim_16"
+        android:textSize="@dimen/text_12"
+        android:textColorHint="@color/edt_hint_color"
+        android:inputType="number"
+        android:fontFamily="@font/montserrat_medium"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

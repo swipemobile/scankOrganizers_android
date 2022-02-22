@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLoginMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <RelativeLayout
+            android:id="@+id/rlLogo"
+            android:layout_alignParentTop="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/dim_18"
+                android:layout_margin="@dimen/dim_16"
+                android:layout_height="@dimen/dim_24"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_close_red"
+                app:tint="@color/grey" />
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ivClose"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/bt_progress_bar_diameter"
+        android:layout_height="@dimen/bt_progress_bar_diameter"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="visible" />
+
+
+
+</RelativeLayout>

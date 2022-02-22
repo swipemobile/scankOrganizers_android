@@ -1,0 +1,262 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAutofill="yes"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <RelativeLayout
+            android:id="@+id/rlLogo"
+            android:layout_alignParentTop="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_new_skip"
+                android:layout_width="@dimen/dim_18"
+                android:layout_height="@dimen/dim_24"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_close_red"
+                app:tint="#CECECE" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="94dp"
+                    android:layout_marginTop="@dimen/dim_80"
+                    android:layout_height="62dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="false"
+                    android:src="@drawable/splash_icon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_11"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginTop="@dimen/dim_6"
+                    android:textColor="@color/grey"
+                    android:text="@string/splash_app_text" />
+
+        </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nvScrollView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlLogo"
+        android:layout_marginTop="@dimen/dim_40"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lr_log_edittes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/sign_in"
+                        android:textAlignment="center"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/ts16sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:background="@drawable/bg_rounded_rect_transparent"
+                        android:ems="10"
+                        android:hint="@string/email"
+                        android:textColorHint="@color/edt_hint_color"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="@dimen/dim_16"
+                        android:textAlignment="textStart"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/edt_hint_color"
+                        android:textSize="@dimen/ts12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_rounded_rect_transparent">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/bg_rounded_rect_transparent"
+                            android:ems="10"
+                            android:textColorHint="@color/edt_hint_color"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:paddingStart="@dimen/dim_16"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/edt_hint_color"
+                            android:textSize="@dimen/ts12sp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivVisiblePassword"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/dim_16"
+                            android:src="@drawable/ic_eye_gray" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lrButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_4"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:layout_marginEnd="@dimen/dim_4"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cbRememberMe"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#898989"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/remember_me"
+                        android:textColor="#8B8B8B"
+                        android:textSize="@dimen/ts12sp" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvForgotPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/forgot_password"
+                        android:textColor="#626161"
+                        android:textSize="@dimen/ts12sp" />
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btSignin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_54"
+                    android:layout_marginTop="@dimen/dim_32"
+                    android:background="@drawable/bg_rounded_rect_red"
+                    android:fontFamily="@font/avenir_heavy"
+                    android:text="@string/sign_in"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/ts16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_4"
+                    android:layout_marginTop="@dimen/dim_28"
+                    android:layout_marginEnd="@dimen/dim_4"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/don_t_have_an_account"
+                        android:textColor="#8B8B8B" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSignup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up"
+                        android:layout_marginStart="@dimen/dim_8"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/btn_red_color"
+                        android:textSize="@dimen/ts14sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/bg_rounded_rect_signup_button"
+                        android:text="@string/sign_up"
+                        android:textAllCaps="false"
+                        android:textColor="#96a6a6a6"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
